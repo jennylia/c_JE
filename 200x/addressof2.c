@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+  int int_var = 5;
+  int *int_ptr;
+
+  int_ptr = &int_var; 
+  printf("int_ptr = 0x%08x\n", int_ptr);
+  printf("&int_ptr = 0x%08x\n", &int_ptr);
+  printf("*int_ptr = 0x%0x\n", *int_ptr);
+
+  printf("int_var is located at 0x%08x\n and contains %d\n", &int_var, int_var);
+  printf("int_ptr is located at 0x%08x\n and contains %08x\n and point to %d\n",
+      &int_ptr, int_ptr, *int_ptr);
+}
