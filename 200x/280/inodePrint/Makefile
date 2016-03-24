@@ -1,4 +1,4 @@
 all:
-	gcc -g -o inode try.c
+	gcc -g -o inode try_dir.c
 clean:
 	rm inode
