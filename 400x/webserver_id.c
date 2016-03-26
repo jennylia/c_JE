@@ -30,7 +30,7 @@ int main(int argc, char *argv[]){
   memset(&target_addr.sin_zero, '\0', 8);
 
   if(connect(sockfd, (struct sockaddr *)&target_addr, sizeof(struct sockaddr)) == -1)
-    fatal("connecting to target server");
+    printf("connecting to target server");
 
   send_string(sockfd, "HEAD / HTTP/1.0\r\n\r\n");
   while(recv_line(sockfd, buffer)){
