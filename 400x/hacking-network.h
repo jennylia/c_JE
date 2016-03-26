@@ -6,7 +6,7 @@ int send_string(int sockfd, unsigned char *buffer){
     sent_bytes = send(sockfd, buffer, bytes_to_send, 0);
     if (sent_bytes == -1)
       return 0;
-    butes_to_send -= sent_bytes;
+    bytes_to_send -= sent_bytes;
     buffer += sent_bytes;
     return 1;
   }
@@ -28,7 +28,7 @@ int recv_line (int sockfd, unsigned char* dest_buffer){
     else{
       eol_matched = 0;
     }
-    ptr ++ l
+    ptr ++ ;
   }
   return 0;
 }
